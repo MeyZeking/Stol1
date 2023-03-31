@@ -19,7 +19,7 @@ body{
     width: 100%;
     height: 80px;
     background: rgba(159, 0, 61, 0.7);
-    z-index: 5;
+    z-index: 10;
 }
 
 .container{
@@ -99,7 +99,7 @@ body{
 .main_first-block{
     background-image: url("../img/bcg_fon-50.png");
     width: auto;
-    height:950px;
+    height:100vh;
 }
 
 .first_block-content{
@@ -144,14 +144,34 @@ body{
     bottom: 5%;
 }
 
-.banner_block-rel{
+.banner_block-relative{
     position: relative;
     width: 700px;
     height: 600px;
 }
 
+.banner_block-absolute{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner_block-absolute.active{
+    opacity: 1;
+}
+
 .banner-img{
     background-image: url("../img/salad.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-img2{
+    background-image: url("../img/salad_ovosh-transformed.png");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -197,6 +217,101 @@ body{
     right: 8%;
     bottom: 5%
 }
+/* конец контента с банером */
 
 
+/* начало контента с руководством по использованию */
+.main_second-block{
+    background-color:#F0F5F9;
+    height: 100vh;
+}
+
+.second-block{
+    text-align:left;
+}
+
+.block_questions{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    padding: 80px 0 50px 0;
+}
+
+.order_action{
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-column-gap: 80px;
+    margin-bottom: 60px;
+}
+
+.card_action{
+    text-align: -webkit-center;
+}
+
+.ellipse{
+    width: 220px;
+    height: 220px;
+    background: #FFFFFF;
+    border: 3px solid #002060;
+    border-radius: 50%;
+    line-height: 220px;
+}
+
+.ellipse img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text_action{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 30px;
+}
+
+
+.transition-menu{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.transition-menu:not(:last-child){
+    margin-bottom: 80px;
+}
+
+.transition-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.btn_transition{
+    background: #002060;
+    border-radius: 40px;
+    padding: 26px 40px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn_transition a{
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    font-style: normal;
+    transition: font-weight 0.5s ease-in-out;
+}
+
+.btn_transition:hover{
+    background-color: rgba(159, 0, 61, 0.7);
+}
+
+.btn_transition:hover a{
+    font-weight: 900;
+}
 

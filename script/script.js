@@ -11,5 +11,25 @@ document.addEventListener('DOMContentLoaded', function() {
   
       currentSlide.classList.remove('active');
       nextSlide.classList.add('active');
+
     }
   });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var interval = setInterval(nextMenu, 5000); // переключение каждые 5 секунд
+  
+    function nextMenu() {
+      var currentMenu = document.querySelector('.banner_block-absolute.active');
+      var nextMenu = currentMenu.nextElementSibling;
+  
+      if (!nextMenu) {
+        nextMenu = document.querySelector('.banner_block-absolute:first-child');
+      }
+  
+      currentMenu.classList.remove('active');
+      nextMenu.classList.add('active');
+
+    }
+  });
+
+
