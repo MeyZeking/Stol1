@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+/* html{
+    scroll-behavior: smooth;
+} */
+
 ul,li,a{
     list-style: none;
     text-decoration: none;
@@ -16,14 +20,117 @@ body{
 /* начало шапки сайта */
 
 header{
-    height: 80px;
-}
-.header{
     position: fixed;
     width: 100%;
+    height: 80px;
+    background-color: white;
+    z-index: 10;
+}
+/* модальное окно авторизации */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #F0F5F9;
+    margin: 10% auto;
+    padding: 20px;
+    width: 650px;
+    border-radius: 50px;
+    height: auto;
+    text-align: center;
+  }
+
+  .modal-autorization_text{
+    margin-top: 70px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 40px;
+    color:#333333
+  }
+
+  .autorization-info{
+    white-space: pre-wrap;
+  }
+
+.modal_input{
+    height: 80px;
+    border: 2px solid #FF7070;
+    width: 420px; 
+    border-radius: 50px;   
+}
+
+.modal_input:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.input_container{
+    max-width: 420px;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+
+.profile_black-img{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.modal_input::placeholder{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.modal_input[type="text"]{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    padding-left: 60px;
+}
+
+.input_name{
+    background-image: url("../img/profile_black.svg");
+    background-repeat: no-repeat;
+    left: 40px;
+}
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.login-button{
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+  
+/* конец модального окна авторизации */
+
+.header{
     height: inherit;
     background: rgba(159, 0, 61, 0.7);
-    z-index: 10;
 }
 
 .container{
@@ -135,7 +242,7 @@ header{
 main{
     background: #F0F5F9;
     height: auto;
-    padding-top: 80px;
+    padding-top: 180px;
 }
 
 .banner_block{
@@ -296,8 +403,9 @@ main{
     width: 100%;
     height: 58px;
     background: rgba(159, 0, 61, 0.7);
-border-radius: 50px 0 0 50px;
-    padding-left: 15px;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 15px;
   }
   .main_search-btn {
     height: 100%;
@@ -307,7 +415,7 @@ border-radius: 50px 0 0 50px;
     background: none;
     border-radius: 0 50px 50px 0;
     border: 0px;
-    background: rgba(159, 0, 61, 0.7);
+    left: 0;
   }
 
   .main_search-btn:before {
@@ -346,17 +454,18 @@ border-radius: 50px 0 0 50px;
     opacity: 1;
   }
 
-  .first-dishes_block{
+  .dishes_block{
     text-align: left;
+    margin-bottom: 35px;
   }
 
-  .first-dishes_title{
+  .dishes_title{
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 45px;
     color:#333333;
-    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   /* карточка товара */
@@ -486,4 +595,93 @@ h3{
     letter-spacing: 1px;
     transition: 0.5s;
 }
+
+.footer_line{
+    margin-top: 100px;
+    width: 1200px;
+
+}
 /* конец карточки товара */
+
+
+/* начало подвала */
+
+footer{
+    background: #F0F5F9;
+}
+
+.footer-info{
+    padding-top: 65px;
+}
+
+.footer-info:not(:last-child){
+    display: flex;
+    justify-content: space-between;
+}
+.mail{
+    background-image: url("../img/mail.svg");
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.phone{
+    background-image: url("../img/phone.svg");
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.location{
+    background-image: url("../img/location.svg");
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+}
+
+.logo-Knyginino{
+    background-image: url("../img/logo_Knyginino.png");
+    width: 780px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.info-work{
+    text-align: left;
+}
+
+.work-catchen{
+    font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 27px;
+color: #333333;
+}
+
+.work-catchen:not(:last-child){
+    margin-bottom: 26px;
+}
+
+.info-contacts{
+    text-align: left;
+}
+
+.contacts{
+    display: flex;  
+}
+
+.contacts:not(:last-child){
+    margin-bottom: 26px;
+}
+
+.info-location{
+    display: flex;
+    margin-top: 45px;
+}
+
+.info-location p{
+    margin: auto 0;
+}

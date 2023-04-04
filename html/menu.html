@@ -16,6 +16,23 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="modal-autorization_text">Авторизация</h2>
+          <form class="autorization-info">
+            <div class="input_container">
+                <input type="text" id="username" name="username" placeholder="Имя пользователя" class="modal_input">
+                <img src="../img/profile_black.svg" class = "profile_black-img" alt="">
+            </div>
+            
+            <input type="password" id="password" name="password" placeholder="Пароль" class="modal_input">
+            <button type="submit">Войти</button>
+          </form>
+        </div>
+      </div>
+
     <header>
         <div class="header">
             <div class="container">
@@ -39,7 +56,7 @@
 
                     <div class="header_autorization">
                         <div class="autorization_block">
-                            <a href=""><img src="../img/profil.svg" alt=""></a>
+                            <button class="login-button"><img src="../img/profil.svg" alt=""></button>
                             <p class="autorization_txt">Войти</p>
                         </div>
                         <div class="basket_block">
@@ -73,12 +90,12 @@
                 <h1 class="menu-title">Меню</h1>
                 <div class="menu_nav">
                     <ul class="nav-dishes" id="nav-dishes">
-                        <li class="nav-dishes_li"><a href="">Первое</a></li>
-                        <li class="nav-dishes_li"><a href="">Второе</a></li>
-                        <li class="nav-dishes_li"><a href="">Горячие блюда</a></li>
-                        <li class="nav-dishes_li"><a href="">Салаты</a></li>
-                        <li class="nav-dishes_li"><a href="">Напитки</a></li>
-                        <li class="nav-dishes_li"><a href="">Студенческие наборы</a></li>
+                        <li class="nav-dishes_li"><a href="#dishes-first">Первое</a></li>
+                        <li class="nav-dishes_li"><a href="#dishes-second">Второе</a></li>
+                        <li class="nav-dishes_li"><a href="#dishes-warmDish">Горячие блюда</a></li>
+                        <li class="nav-dishes_li"><a href="#dishes-salad">Салаты</a></li>
+                        <li class="nav-dishes_li"><a href="#dishes-drink">Напитки</a></li>
+                        <li class="nav-dishes_li"><a href="#dishes-kit">Студенческие наборы</a></li>
                     </ul>
                     <form action="" class="main_search">
                         <input type = "search" placeholder="Поиск" class="main_search-input">
@@ -89,8 +106,8 @@
                 </div>
             </div>
 
-            <div class="first-dishes_block">
-                <h2 class="first-dishes_title">Первое</h2>
+            <div id="dishes-first" class="dishes_block">
+                <h2 class="dishes_title">Первое</h2>
                 <div class="card-block">
 
                     <div class="card">
@@ -157,8 +174,388 @@
                 </div>
                 
             </div>
+
+            <div id="dishes-second" class="dishes_block">
+                <h2 class="dishes_title">Второе</h2>
+                <div class="card-block">
+
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="dishes-warmDish" class="dishes_block">
+                <h2 class="dishes_title">Горячие блюда</h2>
+                <div class="card-block">
+
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="dishes-salad" class="dishes_block">
+                <h2 class="dishes_title">Салаты</h2>
+                <div class="card-block">
+
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="dishes-drink" class="dishes_block">
+                <h2 class="dishes_title">Напитки</h2>
+                <div class="card-block">
+
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div id="dishes-kit" class="dishes_block">
+                <h2 class="dishes_title">Студенческие наборы</h2>
+                <div class="card-block">
+
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_new">
+                            <p class="card_new-title">Новинка!</p>
+                        </div>
+                        <div class="card-soups">
+                            <img src="../img/borsh.png" alt="Борщ">
+                        </div>
+                
+                        <div class="card_info">
+                            <h3 class="card-title">Борщ</h3>
+                            <h2 class="price">$40.<small>99</small></h2>
+                       
+                            <a href="#" class="buy">В корзину</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <hr class="footer_line">
         </div>
         
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <div class="info-work">
+                    <p class="work-catchen">Дни работы столовой : пн - пт</p>
+                    <p class="work-catchen">Время работы столовой : 9:00 - 14:00</p>
+                    <p class="work-catchen">Время работы буфета : 8:00 - 16:00</p>
+                </div>
+                <div class="info-contacts">
+                    <p class="work-catchen">Контакты :</p>
+                    <div class="contacts">
+                        <div class="mail"></div>
+                        <p class="work-catchen">почта : lucifer.denicze96@mail.ru</p>
+                    </div>
+                    <div class="contacts">
+                        <div class="phone"></div>
+                        <p class="work-catchen">номер телефон: +7954116790 </p>
+                    </div>
+                </div>
+ 
+            </div>
+
+            <div class="info-location">
+                <div class="location"></div>
+                <p class="work-catchen">Нижегородская область, улица Октябрьскаяб корпус 1, этаж 1</p>
+            </div>
+
+            <div class="logo-Knyginino">
+                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
