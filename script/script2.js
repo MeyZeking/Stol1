@@ -111,11 +111,26 @@ checkboxes.forEach(function(checkbox) {
   });
 });
 
-const modalRegistration = document.getElementById('modal_registration');
-const inpName = modalRegistration.getElementById('username');
-const inpPhoneNumber = modalRegistration.getElementById('phoneNumber');
-const inpPassword = modalRegistration.getElementById('password');
-const inpStudent = modalRegistration.getElementById('students');
-const inpGuest = modalRegistration.getElementById('students');
-const inpTeacher = modalRegistration.getElementById('students');
+const submitBtn = document.getElementById('registrationConfirm');
+console.log(submitBtn);
+let isValid = true;
+submitBtn.addEventListener('click', () => {
+  
+  const inpName = document.querySelector('#username');
+  const inpPassword = document.getElementById('password');
+  const inpStudent = document.getElementById('students');
+  const inpGuest = document.getElementById('students');
+  const inpTeacher = document.getElementById('students');
+ 
+
+  if(inpName.value){
+    alert("sadasd");
+    isValid = false;
+  }
+  
+  if(!isValid){
+    event.preventDefault();
+    alert('Не все данные введены!');
+  }
+});
   
