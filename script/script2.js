@@ -45,6 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeButton = document.getElementById('close-autorization');
     const loginButton = document.querySelector('.login-button');
 
+
+    const passwordInp = modal.querySelector('#password');
+    const showHideBtn = modal.querySelector('#show-hide');
+
+  
+
     // Открываем модальное окно при клике на кнопку "Войти"
     loginButton.addEventListener('click', function() {
       modal.style.display = 'block';
@@ -59,7 +65,18 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('click', function(event) {
       if (event.target == modal) {
         modal.style.display = 'none';
+      }
+    });
 
+    
+    showHideBtn.addEventListener('click', () => {
+ 
+      if(passwordInp.getAttribute('type') === 'password') {
+        passwordInp.setAttribute('type', 'text');
+        console.log(passwordInp.type);
+      }
+      else{
+        passwordInp.setAttribute('type', 'password') == 'password';
       }
     });
   });
@@ -111,26 +128,5 @@ checkboxes.forEach(function(checkbox) {
   });
 });
 
-const submitBtn = document.getElementById('registrationConfirm');
-console.log(submitBtn);
-let isValid = true;
-submitBtn.addEventListener('click', () => {
-  
-  const inpName = document.querySelector('#username');
-  const inpPassword = document.getElementById('password');
-  const inpStudent = document.getElementById('students');
-  const inpGuest = document.getElementById('students');
-  const inpTeacher = document.getElementById('students');
- 
 
-  if(inpName.value){
-    alert("sadasd");
-    isValid = false;
-  }
-  
-  if(!isValid){
-    event.preventDefault();
-    alert('Не все данные введены!');
-  }
-});
-  
+
