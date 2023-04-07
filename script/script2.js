@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
       nextBtn.addEventListener('click', nextSlide);
     
       sliderItems[currentSlide].classList.add('active');
-
-      console.log(sliderItems);
   });
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -42,14 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  
-
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('modal');
-    const closeButton = document.querySelector('.close');
+    const closeButton = document.getElementById('close-autorization');
     const loginButton = document.querySelector('.login-button');
-    console.log(loginButton);
-  
+
     // Открываем модальное окно при клике на кнопку "Войти"
     loginButton.addEventListener('click', function() {
       modal.style.display = 'block';
@@ -64,6 +59,63 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('click', function(event) {
       if (event.target == modal) {
         modal.style.display = 'none';
+
       }
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Получаем модальные окна
+    const modalAutorization = document.getElementById('modal');
+    const modalRegistration = document.getElementById('modal_registration');
+    const closeButton = document.getElementById('close-registration');
+  
+    // Получаем кнопку для открытия модального окна 2
+    const buttonRegistration = document.getElementById('registration');
+    // Обработчик клика на кнопке
+    buttonRegistration.onclick = function() {
+      // Скрываем модальное окно 1
+      modalAutorization.style.display = "none";
+      // Открываем модальное окно 2
+      modalRegistration.style.display = "block";
+    }
+  
+    // Получаем кнопку для закрытия модального окна 2
+    // Обработчик клика на кнопке закрытия модального окна 2
+    closeButton.addEventListener('click', function() {
+      modalRegistration.style.display = "none";
+    });
+  
+    // Обработчик клика на модальном окне 2
+    window.addEventListener('click', function(event) {
+      if (event.target == modalRegistration) {
+        modalRegistration.style.display = 'none';
+      }
+    });
+  });
+
+  
+  
+const checkboxes = document.querySelectorAll('.role_checkbox');
+// Добавляем обработчик клика на каждый чекбокс
+checkboxes.forEach(function(checkbox) {
+  checkbox.addEventListener('click', function() {
+    // Если текущий чекбокс уже выбран, то снимаем выбор со всех остальных чекбоксов
+    if (this.checked) {
+      checkboxes.forEach(function(otherCheckbox) {
+        if (otherCheckbox != checkbox) {
+          otherCheckbox.checked = false;
+        }
+      });
+    }
+  });
+});
+
+const modalRegistration = document.getElementById('modal_registration');
+const inpName = modalRegistration.getElementById('username');
+const inpPhoneNumber = modalRegistration.getElementById('phoneNumber');
+const inpPassword = modalRegistration.getElementById('password');
+const inpStudent = modalRegistration.getElementById('students');
+const inpGuest = modalRegistration.getElementById('students');
+const inpTeacher = modalRegistration.getElementById('students');
+  

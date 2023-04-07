@@ -8,30 +8,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/menu.css">
-    <script src="../script/script2.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <title>Document</title>
 </head>
 <body>
 
     <div id="modal" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
+          <span id="close-autorization" class="close">&times;</span>
           <h2 class="modal-autorization_text">Авторизация</h2>
           <form class="autorization-info">
             <div class="input_container">
                 <input type="text" id="username" name="username" placeholder="Имя пользователя" class="modal_input">
                 <img src="../img/profile_black.svg" class = "profile_black-img" alt="">
             </div>
-            
-            <input type="password" id="password" name="password" placeholder="Пароль" class="modal_input">
-            <button type="submit">Войти</button>
+            <div class="input_container">
+                <input type="password" id="password" name="password" placeholder="Пароль" class="modal_input">
+                <img src="../img/password.svg" class = "profile_black-img" alt="">
+            </div>
           </form>
+
+          <div class="check_password">
+            <input type="checkbox">
+            <p class="remember_password">Запомнить пароль</p>
+          </div>
+
+          <button type="submit" class="btn_comeIn">Войти</button>
+
+          <div class="registraion-li">
+            <button id="registration" class="registraion-a">Нет аккаунта?</button>
+          </div>
+         
         </div>
-      </div>
+    </div>
+
+    <div id="modal_registration" class="modal">
+        <div class="modal-content">
+            <span id="close-registration" class="close">&times;</span>
+            <h2 class="modal-autorization_text">Регистрация</h2>
+            <form class="autorization-info">
+                <div class="input_container">
+                    <input type="text" id="username" name="username" placeholder="Имя пользователя" class="modal_input input_registration">
+                </div>
+
+                <div class="input_container">
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Введите номер телефона" class="modal_input input_registration">
+                </div>
+
+                <div class="input_container">
+                    <input type="password" id="password" name="password" placeholder="Придумайте пароль" class="modal_input input_registration">
+                </div>
+
+                <div class="check_role">
+                    <div class="role-info">
+                        <input type="checkbox" id="students" name="option" value="student" class="role_checkbox">
+                        <p  class="role_text">Студент</p>
+                    </div>
+                    <div class="role-info">
+                        <input type="checkbox" id="guests" name="option" value="guest" class="role_checkbox">
+                        <p class="role_text">Гость</p>
+                    </div>
+                    <div class="role-info">
+                        <input type="checkbox" id="teacher" name="option" value="teacher" class="role_checkbox">
+                        <p class="role_text">Преподаватель</p>
+                    </div>
+                </div>
+
+                <button type="submit" id="registrationConfirm" class="btn-registraion" disabled>Зарегистрироваться</button>
+              
+            </form>
+        </div>
+    </div>
 
     <header>
         <div class="header">
@@ -558,4 +605,5 @@
         </div>
     </footer>
 </body>
+<script src="../script/script2.js"></script>
 </html>
