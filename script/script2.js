@@ -128,5 +128,42 @@ checkboxes.forEach(function(checkbox) {
   });
 });
 
+const btnReturnAutorization = document.getElementById('returnAutorization');
+btnReturnAutorization.addEventListener('click', () => {
+  const modalAutorization = document.getElementById('modal');
+  const modalRegistration = document.getElementById('modal_registration');
+  modalAutorization.style.display = "block";
+  // Открываем модальное окно 2
+  modalRegistration.style.display = "none";
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btnRegistration = document.getElementById('registrationConfirm');
+  const closeButton = document.querySelector('#close-verification');
+  const modalRegistration = document.getElementById('modal_registration');
+  const modalVerification = document.getElementById('modalVerification');
+  btnRegistration.onclick = function() {
+    // Скрываем модальное окно 1
+    modalRegistration.style.display = "none";
+    // Открываем модальное окно 2
+    modalVerification.style.display = "block";
+  }
+
+  closeButton.addEventListener('click', () => {
+    modalVerification.style.display = "none";
+  });
+
+});
+
+const verificztionAccount = document.getElementById('verificztionAccount');
+verificztionAccount.addEventListener('click', () => {
+  const modalVerification = document.getElementById('modalVerification');
+  modalVerification.style.display = "none";
+  alert("Вы успешно зарегистрировались!");
+})
+
+
+
 
 

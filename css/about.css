@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Comfortaa', cursive;
+    background: rgb(0, 0, 0) url("../img/icon-tits.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .container{
+    z-index: 1;
+    color: rgb(255, 255, 255);
+  }
+
+  .name-text{
+
+    width: 500px;
+    text-align: center;
+    max-height: 750px;
+    margin: 0 auto;
+    margin-top: 7%;
+    overflow-y: scroll;
+  }
+
+  .FIO{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    animation: scroll 2s linear infinite;
+  }
+
+  .FIO:not(:last-child){
+    margin-bottom: 30px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0); /* начальное положение */
+    }
+    100% {
+      transform: translateY(-100%); /* конечное положение */
+    }
+  }

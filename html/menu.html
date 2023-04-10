@@ -37,7 +37,7 @@
             <p class="remember_password">Запомнить пароль</p>
           </div>
 
-          <button type="submit" class="btn_comeIn">Войти</button>
+          <button type="button" class="btn_comeIn">Войти</button>
 
           <div class="registraion-li">
             <button id="registration" class="registraion-a">Нет аккаунта?</button>
@@ -49,6 +49,7 @@
     <div id="modal_registration" class="modal">
         <div class="modal-content">
             <span id="close-registration" class="close">&times;</span>
+            <span id="returnAutorization" class="return-autorization">&#8592;</span>
             <h2 class="modal-autorization_text">Регистрация</h2>
             <form class="autorization-info" id="form_registration">
                 <div class="input_container">
@@ -78,9 +79,28 @@
                     </div>
                 </div>
 
-                <button id="registrationConfirm" class="btn-registraion">Зарегистрироваться</button>
+                <button id="registrationConfirm" type="button" class="btn-registraion">Зарегистрироваться</button>
               
             </form>
+        </div>
+    </div>
+
+    <div id="modalVerification" class="modal">
+        <div class="modal-content">
+            <span id="close-verification" class="close">&times;</span>
+            <h2 class="modal-autorization_text">Введите код</h2>
+
+                <input type="text" placeholder="X-X-X-X-X-X" class="password_confirm">
+                
+                <div class="timer">
+                    <p>0:59</p>
+                </div>
+
+                <div class="verification-block">
+                    <button id="verificztionAccount" class="btn-confirm">Подтвердить</button>
+                    <button class="btn-repeat">Выслать код повторно</button>
+                </div>
+        
         </div>
     </div>
 
@@ -101,7 +121,7 @@
                         <li class="nav_link" ><a href="#">Новости</a></li>
                         <li class="nav_link" ><a href="#">Меню</a></li>
                         <li class="nav_link" ><a href="#">Новинки</a></li>
-                        <li class="nav_link" ><a href="#">О нас</a></li>
+                        <li class="nav_link" ><a href="../html/about.html">О нас</a></li>
                         <li class="nav_link" ><a href="#">Ваши предложения</a></li>
                     </ul>
 
