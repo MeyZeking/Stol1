@@ -7,25 +7,20 @@
   
   body {
     font-family: 'Comfortaa', cursive;
-    background: rgb(0, 0, 0) url("../img/icon-tits.png") no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    border: none;
+    background:rgb(0, 0, 0);
   }
 
   .container{
-    z-index: 1;
+    z-index: 0;
     color: rgb(255, 255, 255);
   }
 
   .name-text{
-
-    width: 500px;
+    width: 700px;
     text-align: center;
     max-height: 750px;
     margin: 0 auto;
-    margin-top: 7%;
+    padding-top: 5%;
     overflow-y: scroll;
   }
 
@@ -40,11 +35,7 @@
     margin-bottom: 30px;
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateY(0); /* начальное положение */
-    }
-    100% {
-      transform: translateY(-100%); /* конечное положение */
-    }
+  .name-text::-webkit-scrollbar{
+    width: 0;
+    height: 0;
   }
