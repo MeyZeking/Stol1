@@ -13,6 +13,10 @@ body{
     background: white;
 }
 
+p{
+    color: #333333;
+}
+
 header{
     position: fixed;
     width: 100%;
@@ -120,10 +124,64 @@ main{
 }
 
 .backet-title{
-    position: relative;
     width: auto;
+    display: flex;
+}
+
+.backet-title div{
+    position: relative;
+    padding: 15px;
 }
 
 .dish_count{
     position: absolute;
+    right: 0;
+    top: 0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.basket-name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.dish-block img{
+    width: 227.06px;
+    height: 164.76px;
+    margin-right: 40px;
+}
+
+.dish-block{
+    display: flex;
+    width: auto;
+}
+
+.dish-add-put{
+    display: flex;
+    align-items: center;
+}
+
+.dish-add{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: #002060;
+    color: white;
+    line-height:40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#minus{
+    margin-right: 15px;
+}
+
+#add{
+    margin-left: 15px;
 }
