@@ -344,25 +344,126 @@ color: white;
     margin-top: 20px;
 }
 
+.additional-ingridients div:not(:last-child){
+    margin-top: 55px;
+}
+
 .additional-ingridients{
     margin-left: 60px;
+    height: 100%;
+    text-align: left;
+    position: relative;
 }
 
 .sourceCream{
     display: flex;
+    justify-content: space-between;
 }
 
 .sourceCream p{
     font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 20px;
-   margin: auto 0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    margin: auto 0;
+    padding-right: 10px;
 }
 
 .price-rezult{
     font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.sourceCream:last-child{
+    margin-top: 40px;
+}
+
+.footer_line{
+    margin-top: 100px;
+    width: 1200px;
+
+}
+
+footer{
+    background: #F0F5F9;
+}
+
+.footer-info{
+    padding-top: 65px;
+}
+
+.footer-info:not(:last-child){
+    display: flex;
+    justify-content: space-between;
+}
+.mail{
+    background-image: url("../img/mail.svg");
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.phone{
+    background-image: url("../img/phone.svg");
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.location{
+    background-image: url("../img/location.svg");
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+}
+
+.logo-Knyginino{
+    background-image: url("../img/logo_Knyginino.png");
+    width: 780px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.info-work{
+    text-align: left;
+}
+
+.work-catchen{
+    font-style: normal;
 font-weight: 400;
-font-size: 36px;
-line-height: 20px;
+font-size: 24px;
+line-height: 27px;
+color: #333333;
+}
+
+.work-catchen:not(:last-child){
+    margin-bottom: 26px;
+}
+
+.info-contacts{
+    text-align: left;
+}
+
+.contacts{
+    display: flex;  
+}
+
+.contacts:not(:last-child){
+    margin-bottom: 26px;
+}
+
+.info-location{
+    display: flex;
+    margin-top: 45px;
+}
+
+.info-location p{
+    margin: auto 0;
 }
