@@ -150,15 +150,25 @@ main{
     line-height: 45px;
 }
 
+.dish-icon_block{
+    display: flex;
+}
+
 .dish-block img{
     width: 227.06px;
     height: 164.76px;
     margin-right: 40px;
+    
 }
 
 .dish-block{
     display: flex;
-    width: auto;
+    width: 750px;
+    height: 260px;
+    background: rgba(219, 163, 154, 0.5);
+    border-radius: 50px;
+    margin-bottom: 40px;
+    align-items: center;
 }
 
 .dish-add-put{
@@ -184,4 +194,175 @@ main{
 
 #add{
     margin-left: 15px;
+}
+
+.btn-add{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+
+.bread{
+    background: rgba(219, 163, 154, 0.7);
+    border-radius: 0px 0px 50px 50px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.bread.visible{
+    height: auto;
+    height: 140px;
+}
+
+.add-bread-white{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-bread-white:not(:last-child){
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bread-text{
+    padding-left: 15px;
+}
+
+
+.add-bread-white p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 20px;
+    margin: auto 0;
+}
+
+.bread-add{
+    width: 35px;
+    height: 35px;
+    background: #002060;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.bread-add-put{
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+#minus2{
+    margin-right: 10px;
+}
+
+#add2{
+    margin-left: 10px;
+}
+
+.add-bread{
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 20px;
+    padding: 22px 45px;
+    background: #002060;
+    border-radius: 50px;
+    color:white;
+    cursor: pointer;
+    border: none;
+    transition: border-radius 0.5s ease-in-out;
+}
+
+.add-bread.active{
+    border-radius: 50px 50px 0 0 ;
+}
+
+.payment{
+    display: inline-block;
+    background: rgba(219, 163, 154, 0.5);
+    border-radius: 50px;
+    width: 339px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.total-count{
+    display: flex;
+    justify-content: space-around;
+    font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 20px;
+color: #333333;
+opacity: 0.7;
+margin-bottom: 15px;
+}
+
+.total-sum{
+    display: flex;
+    justify-content: space-around;
+    font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 20px;
+color: #333333;
+margin-bottom: 40px;
+}
+
+.order_payments div:not(:last-child){
+    text-align: left;
+    margin-left: 50px;
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+margin-bottom: 10px;
+}
+
+.btn-payments{
+    padding: 16px 29px;
+    cursor: pointer;
+    font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+background: #002060;
+border-radius: 20px;
+border: none;
+color: white;
+}
+
+.radio{
+    margin-bottom: 10px;
+}
+
+.order_payments div:last-child{
+    margin-top: 20px;
+}
+
+.additional-ingridients{
+    margin-left: 60px;
+}
+
+.sourceCream{
+    display: flex;
+}
+
+.sourceCream p{
+    font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 20px;
+   margin: auto 0;
+}
+
+.price-rezult{
+    font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 20px;
 }
