@@ -31,5 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
   });
-
+  
+  const menu = document.querySelector('.header_nav');
+ const burger = document.querySelector('.burger');
+  burger.addEventListener('click', function() {
+    burger.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
 

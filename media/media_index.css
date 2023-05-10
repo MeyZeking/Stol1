@@ -1,0 +1,388 @@
+@media (max-width:1200px) {
+    .container{
+       max-width: 900px;
+    }
+
+    .header_content{
+        padding: 0 5px;
+    }
+
+    .nav_link:not(:last-child){
+        margin-right: 20px;
+    }
+
+    .tagline_banner{
+        font-size: 40px;
+    }
+
+    .text_banner{
+        width: 500px;
+    }
+
+    .banner_block-relative{
+        width: 500px;
+        height: 400px;
+    }
+
+    .banner-img{
+        width: 480px;
+        height: 350px;
+    }
+
+    .banner-img2{
+        width: 480px;
+        height: 350px;
+    }
+
+    .block_price{
+        top: 0;
+        right: 0;
+        width: 160px;
+        height: 160px;
+        font-size: 22px;
+    }
+
+    .block_price span{
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    .name_product{
+        right: 0;
+        bottom: 0;
+        font-size: 28px;
+        padding:15px 15px 15px 15px;
+    }
+
+    .block_questions{
+        font-size: 42px;
+        line-height: 54px;
+        padding-top: 60px;
+    }
+
+    .order_action{
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-column-gap: 30px;
+    }
+
+    .ellipse{
+        width: 190px;
+        height: 190px;
+        line-height: 190px;
+    }
+
+    .text_action{
+        padding-top: 20px;
+    }
+
+    .btn_transition{
+        padding: 20px 32px;
+    }
+
+    .btn_transition a{
+        font-size: 32px;
+    }
+
+    .transition-text{
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 500px;
+    }
+
+    .transition-menu:not(:last-child){
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:900px){
+    .container{ 
+        max-width: 700px;
+    }
+
+    .header_content{
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .header_nav{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 400px;
+        height: 250px;
+        background-color: rgb(22, 109, 185);
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        padding-top: 80px;
+        text-align: left;
+        line-height: 48px;
+        padding-left: 10px;
+    }
+
+    .nav_link a{
+        font-size: 32px;
+    }    
+    .header_nav.active{
+        display: block;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        height: auto;
+        z-index: 1  ;
+        left: 0;
+        top: 50%;
+    }
+
+    .burger span,
+    .burger span::after,
+    .burger span::before {
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .burger span::before{
+        content: '';
+        top: -15px;
+    }
+
+    .burger span::after{
+        content: '';
+        bottom: -15px;
+    }
+
+    .burger.active span{
+        background-color: transparent;  
+    }
+
+    .burger.active span::before, 
+    .burger.active span::after{
+        top: 0;
+    }
+
+    .burger.active span::before{
+        transform: rotate(45deg);
+    }
+
+    .burger.active span::after{
+        transform: rotate(-45deg);
+    }
+ 
+    .banner_block-relative{
+        width: 400px;
+        height: 300px;
+        margin-right: 30px;
+    }
+
+    .banner-img{
+        width: 390px;
+        height: 300px;
+    }
+
+    .banner-img2{
+        width: 370px;
+        height: 280px;
+    }
+
+    .tagline_banner{
+        top: 15%;
+    }
+
+    .block_questions{
+        font-size: 36px;
+    }
+
+    .order_action{
+        grid-template-columns: 160px 160px 160px 160px;
+        grid-column-gap: 15px;
+    }
+
+    .ellipse{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+
+    .ellipse img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .text_action{
+        font-size: 16px;
+    }
+
+    .btn_transition a{
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .btn_transition{
+        padding: 24px 16px;
+    }
+
+    .transition-text{
+        font-size: 24px;
+        max-width: 410px;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        max-width: 525px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .img_Univer{
+        background-size: contain;
+    }
+
+    .logo_img{
+        width: 60px;
+    }
+
+    .logo_text{
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    .tagline_banner{
+        top: 20%;
+        font-size: 36px;
+    }
+
+    .block_questions{
+        font-size: 30px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .order_action{
+        grid-template-columns: 120px 120px 120px 120px;
+        margin-bottom: 40px;
+    }
+
+    .ellipse{
+        width: 110px;
+        height: 110px;
+        line-height: 110px
+    }
+
+    .ellipse img{
+        width: 65px;
+        height: 65px;
+    }
+
+    .text_action{
+        line-height: 22px;
+        font-size: 12.5px;
+        padding-top: 10px;
+    }
+
+    .btn_transition a{
+        font-size: 22px;
+        line-height: 22px;
+
+    }
+
+    .btn_transition{
+        padding: 18px 12px;
+    }
+
+    .transition-text{
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 525px){
+
+    .container{
+        max-width: 425px;
+    }
+    
+    .burger span,
+    .burger span::before,
+    .burger span::after{
+        width: 40px;
+        height: 3px;
+    }
+
+    .header_content{
+        justify-content: center;
+    }
+
+    .header_autorization{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .logo_text{
+        margin-left: 5px;
+        top: 50%;
+    }
+
+    .text_banner{
+        width: 350px;
+        
+    }
+
+    .tagline_banner{
+        font-size: 28px;
+        top: 15%;
+    }
+
+    .banner_block-relative{
+        height: 400px;
+    }
+
+    .order_action{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .text_action{
+        max-width: 150px;
+    }
+
+    .block_transition{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .transition-text{
+        display: none;
+    }
+
+    .btn_transition a{
+        font-size: 16px;
+    }
+
+    .transition-menu:not(:last-child){
+        margin-bottom: 0;
+    }
+
+    .card_action{
+        margin-bottom: 40px;
+    }
+
+    .text_action{
+        font-size: 14px;
+    }
+
+
+}

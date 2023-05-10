@@ -35,6 +35,11 @@ body{
     height: 100%;
 }
 
+.burger{
+    display: none;
+    height: auto;
+}
+
 .header_logo{
     display: flex;
     align-items: center;
@@ -163,19 +168,20 @@ body{
 }
 
 .banner-img{
-    background-image: url("../img/salad.png");
-    width: 100%;
-    height: 100%;
+    background-image: url("../img/salad_cesar.png");
+    width: 650px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .banner-img2{
-    background-image: url("../img/salad_ovosh-transformed.png");
-    width: 100%;
-    height: 100%;
+    background-image: url("../img/saladd_ovosh.png");
+    width: 650px;
+    height: 500px;
     background-repeat: no-repeat;
-    right: 0;
+    background-size: cover;
 }
 
 .block_price{
